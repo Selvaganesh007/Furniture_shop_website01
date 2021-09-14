@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar  */
+.clearfix {
+    clear: both;
+}
+
+nav ul {
+    margin          : 0 200px;
+    overflow        : hidden;
+    list-style-type : none;
+    background-color: rgb(255, 255, 255);
+}
+
+nav ul li {
+    padding    : 30px 0;
+    font-size  : 20px;
+    font-weight: 500;
+    float      : left;
+}
+
+nav ul li a {
+    display        : inline-block;
+    color          : black;
+    text-decoration: none;
+    text-align     : center;
+    padding        : 30px 20px;
+}
+
+li a:hover {
+    background-color: rgb(211, 226, 1);
+    color           : whitesmoke;
+}
+
+.i {
+    color      : rgb(211, 226, 1);
+    font-size  : 60px;
+    font-weight: lighter;
+}
+
+.brandname {
+    color      : rgb(122, 112, 112);
+    font-size  : 50px;
+    font-weight: 600;
+    margin     : 10px 0 40px 0;
+}
+
+/* carousel  */
+.carousel-item {
+    height             : 500px;
+    width              : 800px;
+    background-position: top center;
+    /* opacity         : 0.6; */
+}
+.carousel{
+    margin-bottom: 50px ;   
+}
+.carousel-inner > .carousel-item > img {
+    width:1000px;
+    height:500px;
+    text-align: center;
+  }
+
+/* card  */
+.cards {
+    padding: 5px;
+    width  : 1000px;
+}
+
+.card_items {
+    width           : 300px;
+    height          : 485px;
+    float           : left;
+    margin          : 0 33px 10px 33px;
+    background-color: rgb(211, 226, 1);
+}
+
+.card_items h3 {
+    /* margin: 25px 90px; */
+    padding: 25px 80px;
+}
+
+.card_items p {
+    padding                  : 20px 20px;
+    padding-bottom           : 100px;
+    width                    : 300px;
+    text-align               : justify;
+    background-color         : #5d3d3d;
+    color                    : white;
+    border-bottom-left-radius: 80px;
+}
+
+.card_items i {
+    background-color: rgb(211, 226, 1);
+    width           : 300px;
+    float           : right;
+    padding         : 10px;
+    margin          : -20px 0 0 0;
+    float           : right;
+    color           : #ffffff;
+}
+
+/* card 2 */
+
+
+#service .card_title {
+    margin     : 10px;
+    font-size  : 20px;
+    font-weight: 800;
+}
+
+#service .card_sub {
+    padding: 10px;
+}
+
+#service .card_discription {
+    padding  : 10px;
+    font-size: 15px;
+}
+
+#service .card_button {
+    background-color: rgb(85, 85, 85);
+    color           : #ffffff;
+}
+
+#service ul li {
+    list-style-type: none;
+    line-height    : 40px;
+}
+
+/* contact */
+.cardss {
+    height: 200px;
+    width : 500px;
+    float : left;
+    margin: 20px;
+}
+
+.cards1 {
+    height          : 200px;
+    width           : 200px;
+    float           : left;
+    background-color: rgb(211, 226, 1);
+}
+
+.cards1 h4 {
+    font-size      : 100px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color: #ffffff;
+    padding-top:30px ;
+}
+
+.cards2 {
+    padding         : 30px 10px;
+    height          : 200px;
+    width           : 300px;
+    float           : left;
+    background-color: #5d3d3d;
+    color: #ffffff;
+}
+
+.cards2 p {
+    padding: 10px;
+    color: gray;
+}
+footer h2{
+    font-size: 15px;
+    margin: 30px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        margin          : 0 10px;
+        overflow        : hidden;
+        list-style-type : none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav ul li {
+        /* padding    : 0px 0; */
+        font-size  : 15px;
+        font-weight: 500;
+        float      : left;
+    }
+
+    nav ul li a {
+        display        : inline-block;
+        color          : black;
+        text-decoration: none;
+        text-align     : center;
+        padding        : 5px 5px;
+    }
+
+    li a:hover {
+        background-color: rgb(211, 226, 1);
+        color           : whitesmoke;
+    }
+
+    .cards {
+        padding: 5px;
+        width  : 500px;
+    }
+
+    .card_items {
+        width           : 300px;
+        height          : 485px;
+        float           : left;
+        margin          : 0 33px 50px 33px;
+        background-color: rgb(211, 226, 1);
+        margin-left     : 75px;
+    }
+
+    #service .card {
+        width      : 350px;
+        margin-left: 20px;
+    }
+    .carousel-inner > .carousel-item > img {
+        width:1000px;
+        height:200px;
+        text-align: center;
+      }
+      .carousel-item {
+        height             : 250px;
+        width              :200px;
+        background-position: top center;
+    }
+}
