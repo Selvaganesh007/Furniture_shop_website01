@@ -5,34 +5,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 /* navbar  */
 .clearfix {
     clear: both;
 }
 
-nav ul {
-    margin          : 0 200px;
-    overflow        : hidden;
-    list-style-type : none;
-    background-color: rgb(255, 255, 255);
+ul {
+    text-align: center;
+    width     : 70%;
+    margin    : auto;
 }
 
 nav ul li {
-    padding    : 30px 0;
-    font-size  : 20px;
-    font-weight: 500;
-    float      : left;
+    font-size      : 20px;
+    font-weight    : 500;
+    list-style-type: none;
+    float          : left;
+    padding        : 20px;
 }
 
 nav ul li a {
-    display        : inline-block;
     color          : black;
     text-decoration: none;
-    text-align     : center;
-    padding        : 30px 20px;
+    padding        : 20px;
 }
 
-li a:hover {
+nav ul li a:hover {
     background-color: rgb(211, 226, 1);
     color           : whitesmoke;
 }
@@ -57,52 +59,61 @@ li a:hover {
     background-position: top center;
     /* opacity         : 0.6; */
 }
-.carousel{
-    margin-bottom: 50px ;   
+
+.carousel {
+    margin-bottom: 50px;
 }
-.carousel-inner > .carousel-item > img {
-    width:1000px;
-    height:500px;
+
+.carousel-inner>.carousel-item>img {
+    width     : 1000px;
+    height    : 500px;
     text-align: center;
-  }
+}
 
 /* card  */
 .cards {
-    padding: 5px;
-    width  : 1000px;
+    /* padding: 10px; */
+}
+
+.sepcard {
+    width : 33.333333%;
+    float : left;
+    margin: auto;
 }
 
 .card_items {
-    width           : 300px;
-    height          : 485px;
+    /* width           : 300px;
+    height          : 485px; */
     float           : left;
-    margin          : 0 33px 10px 33px;
-    background-color: rgb(211, 226, 1);
+    background-color: #7e7373;
+    color           : #ffffff;
+    margin          : 10px;
 }
 
 .card_items h3 {
-    /* margin: 25px 90px; */
-    padding: 25px 80px;
+    background-color: rgb(211, 226, 1);
+    padding         : 25px 80px;
+    text-align      : center;
+    margin-bottom   : -5px;
 }
 
 .card_items p {
-    padding                  : 20px 20px;
-    padding-bottom           : 100px;
-    width                    : 300px;
-    text-align               : justify;
-    background-color         : #5d3d3d;
-    color                    : white;
-    border-bottom-left-radius: 80px;
+    padding   : 20px 20px 100px 20px;
+    text-align: justify;
 }
 
 .card_items i {
-    background-color: rgb(211, 226, 1);
-    width           : 300px;
-    float           : right;
-    padding         : 10px;
-    margin          : -20px 0 0 0;
-    float           : right;
-    color           : #ffffff;
+    background-color      : rgb(211, 226, 1);
+    width                 : 50px;
+    height                : 50px;
+    float                 : right;
+    float                 : right;
+    color                 : #ffffff;
+    border-top-left-radius: 50px;
+}
+
+.fas {
+    padding: 25px;
 }
 
 /* card 2 */
@@ -130,15 +141,15 @@ li a:hover {
 
 #service ul li {
     list-style-type: none;
-    line-height    : 40px;
+    text-align     : left;
 }
 
 /* contact */
 .cardss {
-    height: 200px;
-    width : 500px;
+    width : 50%;
     float : left;
-    margin: 20px;
+    color : #ffffff;
+    padding-left: 70px;
 }
 
 .cards1 {
@@ -146,33 +157,30 @@ li a:hover {
     width           : 200px;
     float           : left;
     background-color: rgb(211, 226, 1);
+
 }
 
 .cards1 h4 {
-    font-size      : 100px;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    color: #ffffff;
-    padding-top:30px ;
+    font-size  : 100px;
+    padding-top: 30px;
 }
 
 .cards2 {
-    padding         : 30px 10px;
+    padding         : 15px 5px;
     height          : 200px;
     width           : 300px;
     float           : left;
     background-color: #5d3d3d;
-    color: #ffffff;
 }
 
 .cards2 p {
     padding: 10px;
-    color: gray;
+    color  : gray;
 }
-footer h2{
+
+footer h2 {
     font-size: 15px;
-    margin: 30px 0;
+    margin   : 30px 0;
 }
 
 
@@ -222,14 +230,16 @@ footer h2{
         width      : 350px;
         margin-left: 20px;
     }
-    .carousel-inner > .carousel-item > img {
-        width:1000px;
-        height:200px;
+
+    .carousel-inner>.carousel-item>img {
+        width     : 1000px;
+        height    : 200px;
         text-align: center;
-      }
-      .carousel-item {
+    }
+
+    .carousel-item {
         height             : 250px;
-        width              :200px;
+        width              : 200px;
         background-position: top center;
     }
 }
