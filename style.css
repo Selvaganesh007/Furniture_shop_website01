@@ -14,10 +14,9 @@ img {
     clear: both;
 }
 
-ul {
-    text-align: center;
-    width     : 70%;
-    margin    : auto;
+nav ul {
+    display        : flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -25,13 +24,13 @@ nav ul li {
     font-weight    : 500;
     list-style-type: none;
     float          : left;
-    padding        : 20px;
+    padding        : 15px;
 }
 
 nav ul li a {
     color          : black;
     text-decoration: none;
-    padding        : 20px;
+    padding        : 15px;
 }
 
 nav ul li a:hover {
@@ -72,7 +71,7 @@ nav ul li a:hover {
 
 /* card  */
 .cards {
-    /* padding: 10px; */
+    width: 33.3333%;
 }
 
 .sepcard {
@@ -82,8 +81,6 @@ nav ul li a:hover {
 }
 
 .card_items {
-    /* width           : 300px;
-    height          : 485px; */
     float           : left;
     background-color: #7e7373;
     color           : #ffffff;
@@ -141,35 +138,43 @@ nav ul li a:hover {
 
 #service ul li {
     list-style-type: none;
-    text-align     : left;
 }
 
 /* contact */
-.cardss {
-    width : 50%;
-    float : left;
-    color : #ffffff;
-    padding-left: 70px;
+.lastcard{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.cardss1 {
+    width       : 50%;
+    color       : #ffffff;
+    display: flex;
+    margin: 10px;
+}
+.cardss2 {
+    width       : 50%;
+    color       : #ffffff;
+    display: flex;
+    margin: 10px;
 }
 
 .cards1 {
     height          : 200px;
-    width           : 200px;
-    float           : left;
+    width           : 40%;
     background-color: rgb(211, 226, 1);
-
+    text-align: center;
+    padding-top: 30px;
 }
 
 .cards1 h4 {
     font-size  : 100px;
-    padding-top: 30px;
 }
 
 .cards2 {
     padding         : 15px 5px;
     height          : 200px;
-    width           : 300px;
-    float           : left;
+    width           : 60%;
     background-color: #5d3d3d;
 }
 
@@ -184,62 +189,3 @@ footer h2 {
 }
 
 
-@media only screen and (max-width: 768px) {
-    nav ul {
-        margin          : 0 10px;
-        overflow        : hidden;
-        list-style-type : none;
-        background-color: rgb(255, 255, 255);
-    }
-
-    nav ul li {
-        /* padding    : 0px 0; */
-        font-size  : 15px;
-        font-weight: 500;
-        float      : left;
-    }
-
-    nav ul li a {
-        display        : inline-block;
-        color          : black;
-        text-decoration: none;
-        text-align     : center;
-        padding        : 5px 5px;
-    }
-
-    li a:hover {
-        background-color: rgb(211, 226, 1);
-        color           : whitesmoke;
-    }
-
-    .cards {
-        padding: 5px;
-        width  : 500px;
-    }
-
-    .card_items {
-        width           : 300px;
-        height          : 485px;
-        float           : left;
-        margin          : 0 33px 50px 33px;
-        background-color: rgb(211, 226, 1);
-        margin-left     : 75px;
-    }
-
-    #service .card {
-        width      : 350px;
-        margin-left: 20px;
-    }
-
-    .carousel-inner>.carousel-item>img {
-        width     : 1000px;
-        height    : 200px;
-        text-align: center;
-    }
-
-    .carousel-item {
-        height             : 250px;
-        width              : 200px;
-        background-position: top center;
-    }
-}
